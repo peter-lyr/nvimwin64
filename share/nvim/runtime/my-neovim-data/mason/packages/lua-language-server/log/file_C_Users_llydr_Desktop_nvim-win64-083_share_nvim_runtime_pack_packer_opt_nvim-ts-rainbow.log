@@ -1,0 +1,427 @@
+[05:35:03.368][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:66]: Lua Lsp startup, root: 	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server
+[05:35:03.368][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:67]: ROOT:	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server
+[05:35:03.368][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:68]: LOGPATH:	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/log
+[05:35:03.368][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:69]: METAPATH:	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta
+[05:35:03.368][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:70]: VERSION:	3.6.18
+[05:35:03.383][info] [#0:script\service\service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.115 MB
+        # 00 : 2.115 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[05:35:03.383][info] [#0:script\client.lua:657]: Client init	{
+  capabilities = {
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = false,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = true,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = true,
+        dynamicRegistration = false,
+        insertTextMode = 1
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        linkSupport = true
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = false
+      },
+      implementation = {
+        linkSupport = true
+      },
+      publishDiagnostics = {
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = false,
+        prepareSupport = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = false,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = true,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = false
+        },
+        serverCancelSupport = false,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "operator", "decorator" }
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = false
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      didChangeWatchedFiles = {
+        dynamicRegistration = false,
+        relativePatternSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = false,
+        hierarchicalWorkspaceSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Neovim",
+    version = "0.9.0"
+  },
+  initializationOptions = {},
+  processId = 10372,
+  rootPath = "C:\\Users\\llydr\\Desktop\\nvim-win64-083\\share\\nvim\\runtime\\pack\\packer\\opt\\nvim-ts-rainbow",
+  rootUri = "file:///C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow",
+  trace = "off",
+  workspaceFolders = { {
+      name = "C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow",
+      uri = "file:///C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow"
+    } }
+}
+[05:35:03.383][info] [#0:script\language.lua:137]: VSC language: nil
+[05:35:03.383][info] [#0:script\language.lua:138]: LS  language: en-us
+[05:35:03.383][info] [#0:script\workspace\workspace.lua:38]: Workspace init root: 	file:///C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.383][info] [#0:script\workspace\workspace.lua:42]: Log path: 	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/log/file_C_Users_llydr_Desktop_nvim-win64-083_share_nvim_runtime_pack_packer_opt_nvim-ts-rainbow.log
+[05:35:03.415][info] [#0:script\workspace\workspace.lua:48]: Workspace create: 	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.524][info] [#0:script\provider\provider.lua:46]: Load config from client	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.524][info] [#0:script\provider\provider.lua:47]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[05:35:03.524][info] [#0:script\provider\provider.lua:46]: Load config from client	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.524][info] [#0:script\provider\provider.lua:47]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[05:35:03.524][info] [#0:script\provider\provider.lua:46]: Load config from client	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.524][info] [#0:script\provider\provider.lua:47]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[05:35:03.524][info] [#0:script\provider\provider.lua:61]: Load config from client	fallback
+[05:35:03.524][info] [#0:script\provider\provider.lua:62]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[05:35:03.524][info] [#0:script\library.lua:212]: Init builtin library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.555][info] [#0:script\plugin.lua:86]: plugin path:	C:\Users\llydr\Desktop\nvim-win64-083\share\nvim\runtime\pack\packer\opt\nvim-ts-rainbow
+[05:35:03.555][warn] [#0:script\plugin.lua:101]: plugin not found:	C:\Users\llydr\Desktop\nvim-win64-083\share\nvim\runtime\pack\packer\opt\nvim-ts-rainbow
+[05:35:03.555][info] [#0:script\library.lua:212]: Init builtin library at:	nil
+[05:35:03.571][info] [#0:script\provider\provider.lua:61]: Load config from client	fallback
+[05:35:03.571][info] [#0:script\provider\provider.lua:62]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[05:35:03.571][info] [#0:script\provider\provider.lua:61]: Load config from client	fallback
+[05:35:03.571][info] [#0:script\provider\provider.lua:62]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:322]: Preload start:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:328]: Scan files at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:322]: Preload start:	<fallback>
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/bit.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/debug.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/io.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/os.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/math.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/jit.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/basic.lua
+[05:35:03.680][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/package.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/bit.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/debug.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/io.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/os.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/math.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/jit.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/basic.lua
+[05:35:03.696][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/package.lua
+[05:35:03.805][info] [#0:script\workspace\workspace.lua:377]: Found 16 files at:	<fallback>
+[05:35:03.805][info] [#0:script\workspace\loading.lua:161]: Load files from disk:	<fallback>
+[05:35:03.805][info] [#0:script\workspace\workspace.lua:377]: Found 20 files at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.805][info] [#0:script\workspace\loading.lua:161]: Load files from disk:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:03.805][info] [#0:script\workspace\loading.lua:89]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow/lua/rainbow.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/package.lua , size = 2.699 KB
+[05:35:03.915][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/package.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/package.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/basic.lua , size = 14.135 KB
+[05:35:03.915][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/basic.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/basic.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/jit.lua , size = 0.683 KB
+[05:35:03.915][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/jit.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/jit.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/ffi.lua , size = 2.529 KB
+[05:35:03.915][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[05:35:03.915][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/math.lua , size = 8.133 KB
+[05:35:03.915][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/math.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/math.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/os.lua , size = 4.347 KB
+[05:35:03.915][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/os.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/os.lua
+[05:35:03.915][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string/buffer.lua , size = 18.123 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/io.lua , size = 6.364 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/io.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/debug.lua , size = 7.310 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/debug.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/io.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/debug.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string.lua , size = 6.284 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/string.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/bit.lua , size = 1.320 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/bit.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/bit.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/coroutine.lua , size = 2.524 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/clear.lua , size = 0.797 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table.lua , size = 4.230 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/new.lua , size = 0.642 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:113]: ++++As library of:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:98]: Skip loaded file: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow/lua/rainbow/internal.lua , size = 7.837 KB
+[05:35:03.930][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow/lua/rainbow/levels.lua , size = 5.121 KB
+[05:35:03.946][info] [#0:script\workspace\loading.lua:101]: Preload file at: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow/test/highlight/highlight_spec.lua , size = 10.466 KB
+[05:35:04.055][info] [#0:script\workspace\loading.lua:173]: Loaded files takes [0.250] sec: <fallback>
+[05:35:04.055][info] [#0:script\workspace\loading.lua:182]: Compile files takes [0.000] sec: <fallback>
+[05:35:04.055][info] [#0:script\workspace\loading.lua:183]: Loaded finish:	<fallback>
+[05:35:04.055][info] [#0:script\workspace\workspace.lua:379]: Preload finish at:	<fallback>
+[05:35:04.055][info] [#0:script\workspace\loading.lua:173]: Loaded files takes [0.254] sec: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:04.055][info] [#0:script\workspace\loading.lua:182]: Compile files takes [0.000] sec: file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:04.055][info] [#0:script\workspace\loading.lua:183]: Loaded finish:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:04.055][info] [#0:script\workspace\workspace.lua:379]: Preload finish at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow
+[05:35:04.055][warn] [#0:script\proto\proto.lua:178]: Method [textDocument/didOpen] takes [0.638]sec. {
+  jsonrpc = "2.0",
+  method = "textDocument/didOpen",
+  params = {
+    textDocument = {
+      languageId = "lua",
+      text = '"***"',
+      uri = "file:///C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow/lua/rainbow.lua",
+      version = 0
+    }
+  }
+}
+[05:35:04.165][info] [#0:script\provider\diagnostic.lua:557]: Diagnostics scope [file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow], files count:[20]
+[05:35:04.180][info] [#0:script\provider\diagnostic.lua:574]: Diagnostics scope [file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-ts-rainbow] finished, takes [0.024] sec.
+[05:40:05.743][info] [#0:script\provider\provider.lua:169]: Server shutdown.
+[05:40:05.743][warn] [#0:script\pub\report.lua:25]: Load proto error:	Disconnected!

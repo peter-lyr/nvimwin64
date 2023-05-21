@@ -1,0 +1,324 @@
+[22:57:52.304][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:66]: Lua Lsp startup, root: 	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server
+[22:57:52.304][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:67]: ROOT:	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server
+[22:57:52.304][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:68]: LOGPATH:	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/log
+[22:57:52.304][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:69]: METAPATH:	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta
+[22:57:52.304][info] [#0:C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server\main.lua:70]: VERSION:	3.6.18
+[22:57:52.320][info] [#0:script\service\service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.115 MB
+        # 00 : 2.115 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[22:57:52.320][info] [#0:script\client.lua:657]: Client init	{
+  capabilities = {
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = false,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = true,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = true,
+        dynamicRegistration = false,
+        insertTextMode = 1
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        linkSupport = true
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = false
+      },
+      implementation = {
+        linkSupport = true
+      },
+      publishDiagnostics = {
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = false,
+        prepareSupport = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = false,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = true,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = false
+        },
+        serverCancelSupport = false,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "operator", "decorator" }
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = false
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      didChangeWatchedFiles = {
+        dynamicRegistration = false,
+        relativePatternSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = false,
+        hierarchicalWorkspaceSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Neovim",
+    version = "0.9.0"
+  },
+  initializationOptions = {},
+  processId = 2076,
+  rootPath = "C:\\users\\llydr\\desktop\\nvim-win64-083\\share\\nvim\\runtime\\pack\\packer\\opt\\nvim-lspconfig",
+  rootUri = "file:///C:/users/llydr/desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig",
+  trace = "off",
+  workspaceFolders = { {
+      name = "C:/users/llydr/desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig",
+      uri = "file:///C:/users/llydr/desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig"
+    } }
+}
+[22:57:52.320][info] [#0:script\language.lua:137]: VSC language: nil
+[22:57:52.320][info] [#0:script\language.lua:138]: LS  language: en-us
+[22:57:52.320][info] [#0:script\workspace\workspace.lua:38]: Workspace init root: 	file:///C:/users/llydr/desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig
+[22:57:52.320][info] [#0:script\workspace\workspace.lua:42]: Log path: 	C:/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/log/file_C_users_llydr_desktop_nvim-win64-083_share_nvim_runtime_pack_packer_opt_nvim-lspconfig.log
+[22:57:52.335][warn] [#0:script\files.lua:111]: Fix real file uri: file:///c%3A/users/llydr/desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig -> file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig
+[22:57:52.335][info] [#0:script\workspace\workspace.lua:48]: Workspace create: 	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig
+[22:57:52.335][warn] [#0:script\files.lua:111]: Fix real file uri: file:///c%3A/users/llydr/desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig/lua/lspconfig.lua -> file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig/lua/lspconfig.lua
+[22:57:52.335][warn] [#0:script\files.lua:111]: Fix real file uri: file:///c%3A/users/llydr/desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig/lua/lspconfig/server_configurations/vimls.lua -> file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig/lua/lspconfig/server_configurations/vimls.lua
+[22:57:52.335][warn] [#0:script\files.lua:111]: Fix real file uri: file:///c%3A/users/llydr/desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig/lua/lspconfig/server_configurations/lua_ls.lua -> file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig/lua/lspconfig/server_configurations/lua_ls.lua
+[22:57:52.335][info] [#0:script\provider\provider.lua:46]: Load config from client	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig
+[22:57:52.335][info] [#0:script\provider\provider.lua:47]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[22:57:52.335][info] [#0:script\provider\provider.lua:46]: Load config from client	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig
+[22:57:52.335][info] [#0:script\provider\provider.lua:47]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[22:57:52.335][info] [#0:script\provider\provider.lua:46]: Load config from client	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig
+[22:57:52.335][info] [#0:script\provider\provider.lua:47]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[22:57:52.335][info] [#0:script\provider\provider.lua:61]: Load config from client	fallback
+[22:57:52.335][info] [#0:script\provider\provider.lua:62]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[22:57:52.335][info] [#0:script\library.lua:212]: Init builtin library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig
+[22:57:52.351][info] [#0:script\plugin.lua:86]: plugin path:	C:\Users\llydr\Desktop\nvim-win64-083\share\nvim\runtime\pack\packer\opt\nvim-lspconfig
+[22:57:52.351][warn] [#0:script\plugin.lua:101]: plugin not found:	C:\Users\llydr\Desktop\nvim-win64-083\share\nvim\runtime\pack\packer\opt\nvim-lspconfig
+[22:57:52.351][info] [#0:script\library.lua:212]: Init builtin library at:	nil
+[22:57:52.367][info] [#0:script\provider\provider.lua:61]: Load config from client	fallback
+[22:57:52.367][info] [#0:script\provider\provider.lua:62]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[22:57:52.367][info] [#0:script\provider\provider.lua:61]: Load config from client	fallback
+[22:57:52.367][info] [#0:script\provider\provider.lua:62]: {
+  Lua = {
+    diagnostics = {
+      globals = { "vim" }
+    },
+    runtime = {
+      version = "LuaJIT"
+    },
+    telemetry = {
+      enable = false
+    },
+    workspace = {
+      checkThirdParty = false,
+      library = {}
+    }
+  }
+}
+[22:57:52.476][info] [#0:script\workspace\workspace.lua:322]: Preload start:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig
+[22:57:52.476][info] [#0:script\workspace\workspace.lua:328]: Scan files at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/pack/packer/opt/nvim-lspconfig
+[22:57:52.476][info] [#0:script\workspace\workspace.lua:322]: Preload start:	<fallback>
+[22:57:52.476][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[22:57:52.476][info] [#0:script\provider\provider.lua:169]: Server shutdown.
+[22:57:52.476][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table.lua
+[22:57:52.476][info] [#0:script\workspace\workspace.lua:351]: Scan library at:	file:///c%3A/Users/llydr/Desktop/nvim-win64-083/share/nvim/runtime/my-neovim-data/mason/packages/lua-language-server/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[22:57:52.476][info] [#0:script\provider\provider.lua:162]: Server exited.
