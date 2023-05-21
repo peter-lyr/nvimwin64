@@ -1,2 +1,17 @@
 **/mason/registries
 **/pack/nvimconfig
+**/pack/lazy
+!**/pack/lazy/plugins/aerial.nvim
+!**/pack/lazy/plugins/cmp-buffer
+!**/pack/lazy/plugins/cmp-cmdline
+!**/pack/lazy/plugins/cmp-nvim-lsp
+!**/pack/lazy/plugins/cmp-nvim-ultisnips
+!**/pack/lazy/plugins/cmp-path
+!**/pack/lazy/plugins/diffview.nvim
+!**/pack/lazy/plugins/netrw.nvim
+!**/pack/lazy/plugins/plenary.nvim
+!**/pack/lazy/plugins/project.nvim
+!**/pack/lazy/plugins/telescope.nvim
+!**/pack/lazy/plugins/ultisnips
+!**/pack/lazy/plugins/vim-gitbranch
+!**/pack/lazy/plugins/vim-highlighter
