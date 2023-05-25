@@ -117,6 +117,12 @@ function M.read_projects_from_history()
   end)
 end
 
+local rep = function(path)
+  path = string.gsub(path, '\\', '/')
+  path, _ = vim.fn.tolower(path)
+  return path
+end
+
 local function sanitize_projects()
   local tbl = {}
   if M.recent_projects ~= nil then
@@ -131,7 +137,7 @@ local function sanitize_projects()
   local real_tbl = {}
   for _, dir in ipairs(tbl) do
     if dir_exists(dir) then
-      table.insert(real_tbl, dir)
+      table.insert(real_tbl, rep(dir))
     end
   end
 

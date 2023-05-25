@@ -16,3 +16,6 @@
 !**/pack/lazy/plugins/vim-gitbranch
 !**/pack/lazy/plugins/vim-highlighter
 bin/*.lnk
+**/my-neovim-data
+!**/my-neovim-data/treesitter-parser
+!**/my-neovim-data/mason
