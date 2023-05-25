@@ -137,7 +137,10 @@ local function sanitize_projects()
   local real_tbl = {}
   for _, dir in ipairs(tbl) do
     if dir_exists(dir) then
-      table.insert(real_tbl, rep(dir))
+      dir = rep(dir)
+      if vim.tbl_contains(real_tbl, dir) == false then
+        table.insert(real_tbl, dir)
+      end
     end
   end
 
