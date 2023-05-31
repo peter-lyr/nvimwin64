@@ -32,15 +32,58 @@ function FoldInfo:invalidate_range(srow, erow)
   end
 end
 
+--- Efficiently remove items from middle of a list a list.
+---
+--- Calling table.remove() in a loop will re-index the tail of the table on
+--- every iteration, instead this function will re-index  the table exactly
+--- once.
+---
+--- Based on https://stackoverflow.com/questions/12394841/safely-remove-items-from-an-array-table-while-iterating/53038524#53038524
+---
+---@param t any[]
+---@param first integer
+---@param last integer
+local function list_remove(t, first, last)
+  local n = #t
+  for i = 0, n - first do
+    t[first + i] = t[last + 1 + i]
+    t[last + 1 + i] = nil
+  end
+end
+
 ---@package
 ---@param srow integer
 ---@param erow integer
 function FoldInfo:remove_range(srow, erow)
-  for i = erow - 1, srow, -1 do
-    table.remove(self.levels, i + 1)
-    table.remove(self.levels0, i + 1)
-    table.remove(self.start_counts, i + 1)
-    table.remove(self.stop_counts, i + 1)
+  list_remove(self.levels, srow + 1, erow)
+  list_remove(self.levels0, srow + 1, erow)
+  list_remove(self.start_counts, srow + 1, erow)
+  list_remove(self.stop_counts, srow + 1, erow)
+end
+
+--- Efficiently insert items into the middle of a list.
+---
+--- Calling table.insert() in a loop will re-index the tail of the table on
+--- every iteration, instead this function will re-index  the table exactly
+--- once.
+---
+--- Based on https://stackoverflow.com/questions/12394841/safely-remove-items-from-an-array-table-while-iterating/53038524#53038524
+---
+---@param t any[]
+---@param first integer
+---@param last integer
+---@param v any
+local function list_insert(t, first, last, v)
+  local n = #t
+
+  -- Shift table forward
+  for i = n - first, 0, -1 do
+    t[last + 1 + i] = t[first + i]
+  end
+
+  -- Fill in new values
+  for i = first, last do
+    t[i] = v
   end
 end
 
@@ -48,12 +91,10 @@ end
 ---@param srow integer
 ---@param erow integer
 function FoldInfo:add_range(srow, erow)
-  for i = srow, erow - 1 do
-    table.insert(self.levels, i + 1, '-1')
-    table.insert(self.levels0, i + 1, -1)
-    table.insert(self.start_counts, i + 1, nil)
-    table.insert(self.stop_counts, i + 1, nil)
-  end
+  list_insert(self.levels, srow + 1, erow, '-1')
+  list_insert(self.levels0, srow + 1, erow, -1)
+  list_insert(self.start_counts, srow + 1, erow, nil)
+  list_insert(self.stop_counts, srow + 1, erow, nil)
 end
 
 ---@package
@@ -184,13 +225,25 @@ local function recompute_folds()
   vim._foldupdate()
 end
 
+--- Schedule a function only if bufnr is loaded
+---@param bufnr integer
+---@param fn function
+local function schedule_if_loaded(bufnr, fn)
+  vim.schedule(function()
+    if not api.nvim_buf_is_loaded(bufnr) then
+      return
+    end
+    fn()
+  end)
+end
+
 ---@param bufnr integer
 ---@param foldinfo TS.FoldInfo
 ---@param tree_changes Range4[]
 local function on_changedtree(bufnr, foldinfo, tree_changes)
   -- For some reason, queries seem to use the old buffer state in on_bytes.
   -- Get around this by scheduling and manually updating folds.
-  vim.schedule(function()
+  schedule_if_loaded(bufnr, function()
     for _, change in ipairs(tree_changes) do
       local srow, _, erow = Range.unpack4(change)
       get_folds_levels(bufnr, foldinfo, srow, erow)
@@ -212,7 +265,7 @@ local function on_bytes(bufnr, foldinfo, start_row, old_row, new_row)
     foldinfo:remove_range(end_row_new, end_row_old)
   elseif new_row > old_row then
     foldinfo:add_range(start_row, end_row_new)
-    vim.schedule(function()
+    schedule_if_loaded(bufnr, function()
       get_folds_levels(bufnr, foldinfo, start_row, end_row_new)
       recompute_folds()
     end)
@@ -226,7 +279,8 @@ function M.foldexpr(lnum)
   lnum = lnum or vim.v.lnum
   local bufnr = api.nvim_get_current_buf()
 
-  if not vim.treesitter._has_parser(bufnr) or not lnum then
+  local parser = vim.F.npcall(vim.treesitter.get_parser, bufnr)
+  if not parser then
     return '0'
   end
 
@@ -234,7 +288,6 @@ function M.foldexpr(lnum)
     foldinfos[bufnr] = FoldInfo.new()
     get_folds_levels(bufnr, foldinfos[bufnr])
 
-    local parser = vim.treesitter.get_parser(bufnr)
     parser:register_cbs({
       on_changedtree = function(tree_changes)
         on_changedtree(bufnr, foldinfos[bufnr], tree_changes)

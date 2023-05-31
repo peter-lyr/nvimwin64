@@ -6394,6 +6394,7 @@ hl-CursorLine	syntax.txt	/*hl-CursorLine*
 hl-CursorLineFold	syntax.txt	/*hl-CursorLineFold*
 hl-CursorLineNr	syntax.txt	/*hl-CursorLineNr*
 hl-CursorLineSign	syntax.txt	/*hl-CursorLineSign*
+hl-DiagnosticDeprecated	diagnostic.txt	/*hl-DiagnosticDeprecated*
 hl-DiagnosticError	diagnostic.txt	/*hl-DiagnosticError*
 hl-DiagnosticFloatingError	diagnostic.txt	/*hl-DiagnosticFloatingError*
 hl-DiagnosticFloatingHint	diagnostic.txt	/*hl-DiagnosticFloatingHint*
@@ -6413,6 +6414,7 @@ hl-DiagnosticUnderlineHint	diagnostic.txt	/*hl-DiagnosticUnderlineHint*
 hl-DiagnosticUnderlineInfo	diagnostic.txt	/*hl-DiagnosticUnderlineInfo*
 hl-DiagnosticUnderlineOk	diagnostic.txt	/*hl-DiagnosticUnderlineOk*
 hl-DiagnosticUnderlineWarn	diagnostic.txt	/*hl-DiagnosticUnderlineWarn*
+hl-DiagnosticUnnecessary	diagnostic.txt	/*hl-DiagnosticUnnecessary*
 hl-DiagnosticVirtualTextError	diagnostic.txt	/*hl-DiagnosticVirtualTextError*
 hl-DiagnosticVirtualTextHint	diagnostic.txt	/*hl-DiagnosticVirtualTextHint*
 hl-DiagnosticVirtualTextInfo	diagnostic.txt	/*hl-DiagnosticVirtualTextInfo*
@@ -6968,7 +6970,6 @@ lsp-response	lsp.txt	/*lsp-response*
 lsp-rpc	lsp.txt	/*lsp-rpc*
 lsp-semantic-highlight	lsp.txt	/*lsp-semantic-highlight*
 lsp-semantic_tokens	lsp.txt	/*lsp-semantic_tokens*
-lsp-sync	lsp.txt	/*lsp-sync*
 lsp-util	lsp.txt	/*lsp-util*
 lsp-vs-treesitter	lsp.txt	/*lsp-vs-treesitter*
 lsp.txt	lsp.txt	/*lsp.txt*
@@ -9831,6 +9832,7 @@ vim.lsp.buf.document_symbol()	lsp.txt	/*vim.lsp.buf.document_symbol()*
 vim.lsp.buf.execute_command()	lsp.txt	/*vim.lsp.buf.execute_command()*
 vim.lsp.buf.format()	lsp.txt	/*vim.lsp.buf.format()*
 vim.lsp.buf.formatting()	deprecated.txt	/*vim.lsp.buf.formatting()*
+vim.lsp.buf.formatting_sync()	deprecated.txt	/*vim.lsp.buf.formatting_sync()*
 vim.lsp.buf.hover()	lsp.txt	/*vim.lsp.buf.hover()*
 vim.lsp.buf.implementation()	lsp.txt	/*vim.lsp.buf.implementation()*
 vim.lsp.buf.incoming_calls()	lsp.txt	/*vim.lsp.buf.incoming_calls()*
@@ -9922,7 +9924,6 @@ vim.lsp.set_log_level()	lsp.txt	/*vim.lsp.set_log_level()*
 vim.lsp.start()	lsp.txt	/*vim.lsp.start()*
 vim.lsp.start_client()	lsp.txt	/*vim.lsp.start_client()*
 vim.lsp.stop_client()	lsp.txt	/*vim.lsp.stop_client()*
-vim.lsp.sync.compute_diff()	lsp.txt	/*vim.lsp.sync.compute_diff()*
 vim.lsp.tagfunc()	lsp.txt	/*vim.lsp.tagfunc()*
 vim.lsp.util.apply_text_document_edit()	lsp.txt	/*vim.lsp.util.apply_text_document_edit()*
 vim.lsp.util.apply_text_edits()	lsp.txt	/*vim.lsp.util.apply_text_edits()*

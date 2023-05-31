@@ -64,6 +64,7 @@ local function system(cmd_, silent, env)
       local cmd_str = table.concat(cmd, ' ')
       man_error(string.format('command error: %s', cmd_str))
     end
+    return ''
   end
 
   vim.wait(30000, function()
@@ -582,7 +583,7 @@ local function get_paths(sect, name)
 
   local mandirs = table.concat(vim.split(mandirs_raw, '[:\n]', { trimempty = true }), ',')
   ---@type string[]
-  local paths = fn.globpath(mandirs, 'man?/' .. name .. '*.' .. sect .. '*', false, true)
+  local paths = fn.globpath(mandirs, 'man[^\\/]*/' .. name .. '*.' .. sect .. '*', false, true)
 
   -- Prioritize the result from find_path as it obeys b:man_default_sects.
   local first = M.find_path(sect, name)
@@ -738,7 +739,12 @@ function M.open_page(count, smods, args)
   else
     -- Combine the name and sect into a manpage reference so that all
     -- verification/extraction can be kept in a single function.
-    if tonumber(args[1]) then
+    if args[1]:match('^%d$') or args[1]:match('^%d%a') or args[1]:match('^%a$') then
+      -- NB: Valid sections are not only digits, but also:
+      --  - <digit><word> (see POSIX mans),
+      --  - and even <letter> and <word> (see, for example, by tcl/tk)
+      -- NB2: don't optimize to :match("^%d"), as it will match manpages like
+      --    441toppm and others whose name starts with digit
       local sect = args[1]
       table.remove(args, 1)
       local name = table.concat(args, ' ')
