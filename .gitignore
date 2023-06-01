@@ -1,6 +1,7 @@
 **/mason/registries
 **/pack/nvimconfig
 **/pack/lazy
+!**/pack/lazy/plugins/aerial.nvim
 !**/pack/lazy/plugins/cmp-buffer
 !**/pack/lazy/plugins/cmp-cmdline
 !**/pack/lazy/plugins/cmp-nvim-lsp
