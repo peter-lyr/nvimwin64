@@ -13,7 +13,6 @@
 !**/pack/lazy/plugins/telescope.nvim
 !**/pack/lazy/plugins/ultisnips
 !**/pack/lazy/plugins/vim-gitbranch
-!**/pack/lazy/plugins/vim-highlighter
 bin/*.lnk
 **/my-neovim-data
 !**/my-neovim-data/treesitter-parser
