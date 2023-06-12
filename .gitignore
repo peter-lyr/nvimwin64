@@ -6,7 +6,6 @@
 !**/pack/lazy/plugins/cmp-nvim-lsp
 !**/pack/lazy/plugins/cmp-nvim-ultisnips
 !**/pack/lazy/plugins/cmp-path
-!**/pack/lazy/plugins/diffview.nvim
 !**/pack/lazy/plugins/plenary.nvim
 !**/pack/lazy/plugins/project.nvim
 !**/pack/lazy/plugins/telescope.nvim
